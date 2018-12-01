@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merkury-Dashboard</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="dashboard">
+<aside class="main-sidebar">
+    <div class="sidebar-wrapper">
+        <div class="dashboard-logo">
+            <h1>
+                <a href="index.html">
+                    <img src="assets/img/dashboard/dashboard-logo.png" alt="logo">
+                </a>
+            </h1>
+        </div>
+        <nav class="sidebar-list">
+            <ul>
+                <li class="active">
+                    <a href="dashboard.html">
+                        <img src="assets/img/dashboard/home.png" alt="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="workflow.html">
+                        <img src="assets/img/dashboard/workflow.png" alt="workflow">
+                        Workflow
+                    </a>
+                </li>
+                <li>
+                    <a href="statistics.html">
+                        <img src="assets/img/dashboard/statistics.png" alt="statistics">
+                        Statistics
+                    </a>
+                </li>
+                <li>
+                    <a href="calendar.html">
+                        <img src="assets/img/dashboard/calendar.png" alt="calendar">
+                        Calendar
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html">
+                        <img src="assets/img/dashboard/users.png" alt="users">
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/dashboard/settings.png" alt="settings">
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+<header class="header-dashboard">
+    <div class="header-flex">
+        <nav class="icon-list">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-caret-left icon-left-caret"></i>
+                        <i class="fas fa-bars icon-bars"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search icon-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="dashboard-list">
+            <ul>
+                <li>
+                    <a class="add-btn" href="#">
+                        Add project
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-envelope icon-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <div class="notification">
+                        <a href="#">
+                            <i class="fas fa-bell icon-bell"></i>
+                            <div class="circle-blue small">
+                                <span>3</span>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="avatar">
+                            <img src="assets/img/dashboard/avatar.png" alt="avatar">
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container-fluid">
+    <div class="container-admin">
+        <div class="dashboard-content">
+            <h2>Hello John!</h2>
+            <div class="content-graphs">
+                <div class="content-sales">
+                    <div class="title-flex">
+                        <div class="sales-title">
+                            <h3>Your Sales</h3>
+                        </div>
+                        <div class="sales-option">
+                            <select name="sale-period" id="sale-period">
+                                <option value="week">Period: Last year</option>
+                                <option value="month">Period: Last month</option>
+                                <option value="year">Period: Last week</option>
+                            </select>
+                            <div class="select-arrow"></div>
+                        </div>
+                    </div>
+                    <img class="sales-img" src="assets/img/dashboard/sales.png" alt="sales">
+                </div>
+                <div class="content-report">
+                    <div class="title-flex">
+                        <div class="sales-title">
+                            <h3>Report</h3>
+                        </div>
+                        <div class="sales-option">
+                            <select name="report-period" id="report-period">
+                                <option value="week">Period: Last year</option>
+                                <option value="month">Period: Last month</option>
+                                <option value="year">Period: Last week</option>
+                            </select>
+                            <div class="select-arrow"></div>
+                        </div>
+                    </div>
+                    <img class="graph-img" src="assets/img/dashboard/graph.png" alt="graph">
+                </div>
+            </div>
+            <div class="content-add">
+                <div class="tasks">
+                    <div class="header-tasks">
+                        <h3>Tasks</h3>
+                        <div class="circles">
+                            <div class="circle-blue">
+                                <span>5</span>
+                            </div>
+                            <div class="circle-pink">
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <ul class="tasks-list">
+                            <li>
+                                <div class="task-content">
+                                    <div class="tasks-avatar">
+                                        <div class="circle-blue">
+                                            <span>N</span>
+                                        </div>
+                                    </div>
+                                    <div class="tasks-info">
+                                        <p>New website for Symu.co</p>
+                                        <div class="tasks-time active">
+                                            <i class="far fa-clock icon-clock"></i>
+                                            <span>5 days delays</span>
+                                        </div>
+                                    </div>
+                                    <div class="tasks-options">
+                                        <a href="#">
+                                            <i class="fas fa-ellipsis-v icon-dots"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="task-content">
+                                    <div class="tasks-avatar">
+                                        <div class="circle-blue">
+                                            <span>F</span>
+                                        </div>
+                                    </div>
+                                    <div class="tasks-info">
+                                        <p>Free business PSD Template </p>
+                                        <div class="tasks-time active">
+                                            <i class="far fa-clock icon-clock"></i>
+                                            <span>2 days delays</span>
+                                        </div>
+                                    </div>
+                                    <div class="tasks-options">
+                                        <a href="#">
+                                            <i class="fas fa-ellipsis-v icon-dots"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="task-content">
+                                    <div class="tasks-avatar">
+                                        <div class="circle-blue">
+                                            <span>N</span>
+                                        </div>
+                                    </div>
+                                    <div class="tasks-info">
+                                        <p>New logo for JCD.pl</p>
+                                        <div class="tasks-time">
+                                            <i class="far fa-clock icon-clock"></i>
+                                            <span>5 days delays</span>
+                                        </div>
+                                    </div>
+                                    <div class="tasks-options">
+                                        <a href="#">
+                                            <i class="fas fa-ellipsis-v icon-dots"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="task-content">
+                                    <div class="tasks-avatar">
+                                        <div class="circle-blue">
+                                            <span>F</span>
+                                        </div>
+                                    </div>
+                                    <div class="tasks-info">
+                                        <p>Free Icons Set vol. 3</p>
+                                        <div class="tasks-time">
+                                            <i class="far fa-clock icon-clock"></i>
+                                            <span>10 days delays</span>
+                                        </div>
+                                    </div>
+                                    <div class="tasks-options">
+                                        <a href="#">
+                                            <i class="fas fa-ellipsis-v icon-dots"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="header-message">
+                        <h3>Messages</h3>
+                        <div class="circles">
+                            <div class="circle-blue">
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-item">
+                        <ul class="message-list">
+                            <li class="message-active">
+                                <div class="message-content">
+                                    <div class="message-avatar">
+                                        <img src="assets/img/users/nina-jones.png" alt="nina-jones">
+                                    </div>
+                                    <div class="message-info">
+                                        <p><strong>Nina Jones</strong> <span>5 minutes ago</span></p>
+                                        <p>Hey You! It’s me again :-) I attached new (...)</p>
+                                        <div class="message-option">
+                                            <a href="#">
+                                                <i class="fas fa-reply"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-cog"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="message-active">
+                                <div class="message-content">
+                                    <div class="message-avatar">
+                                        <img src="assets/img/users/nina-jones.png" alt="nina-jones">
+                                    </div>
+                                    <div class="message-info">
+                                        <p><strong>Nina Jones</strong> <span>5 minutes ago</span></p>
+                                        <p>Hey You! It’s me again :-) I attached new (...)</p>
+                                        <div class="message-option">
+                                            <a href="#">
+                                                <i class="fas fa-reply"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-cog"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="message-content">
+                                    <div class="message-avatar">
+                                        <img src="assets/img/users/james-smith.png" alt="james-smith">
+                                    </div>
+                                    <div class="message-info">
+                                        <p><strong>James Smith</strong> <span>2 days ago</span></p>
+                                        <p>Good morning, you are fired!</p>
+                                        <div class="message-option">
+                                            <a href="#">
+                                                <i class="fas fa-reply"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-cog"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="message-content">
+                                    <div class="message-avatar">
+                                        <img src="assets/img/users/nina-jones.png" alt="nina-jones">
+                                    </div>
+                                    <div class="message-info">
+                                        <p><strong>Nina Jones</strong> <span>About 2 weeks ago</span></p>
+                                        <p>Hello! Could You bring me coffee please?</p>
+                                        <div class="message-option">
+                                            <a href="#">
+                                                <i class="fas fa-reply"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fas fa-cog"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="activity">
+                    <div class="header-activity">
+                        <h3>Activity</h3>
+                        <div class="circles">
+                            <div class="circle-blue">
+                                <span>10</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <ul class="activity-list">
+                            <li>
+                                <div class="activity-content">
+                                    <div class="activity-avatar">
+                                        <img src="assets/img/users/nina-jones.png" alt="nina-jones">
+                                    </div>
+                                    <div class="activity-info">
+                                        <p>
+                                            <strong>Nina Jones</strong>
+                                            <span>added a new project</span>
+                                            <strong>Free UI Kit</strong>
+                                        </p>
+                                        <div class="activity-time">
+                                            <i class="far fa-clock"></i>
+                                            <span>Just now</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity-content">
+                                    <div class="activity-avatar">
+                                        <img src="assets/img/users/james-smith.png" alt="james-smith">
+                                    </div>
+                                    <div class="activity-info">
+                                        <p>
+                                            <strong>James Smith</strong>
+                                            <span>commented project</span>
+                                            <strong>Free PSD Template</strong>
+                                        </p>
+                                        <div class="activity-time">
+                                            <i class="far fa-clock"></i>
+                                            <span>40 minutes ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity-content">
+                                    <div class="activity-avatar">
+                                        <img src="assets/img/users/alex-smith.png" alt="alex-smith">
+                                    </div>
+                                    <div class="activity-info">
+                                        <p>
+                                            <strong>Alex Smith</strong>
+                                            <span>completed task</span>
+                                            <strong>Symu Website</strong>
+                                        </p>
+                                        <div class="activity-time">
+                                            <i class="far fa-clock"></i>
+                                            <span>1 hour ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity-content">
+                                    <div class="activity-avatar">
+                                        <img src="assets/img/users/ann-clooney.png" alt="ann-clooney">
+                                    </div>
+                                    <div class="activity-info">
+                                        <p>
+                                            <strong>Ann Clooney</strong>
+                                            <span>added a new project</span>
+                                            <strong>Free PSD (...)</strong>
+                                        </p>
+                                        <div class="activity-time">
+                                            <i class="far fa-clock"></i>
+                                            <span>3 hours ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

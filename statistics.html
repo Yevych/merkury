@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merkury-Statistics</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="dashboard">
+<aside class="main-sidebar">
+    <div class="sidebar-wrapper">
+        <div class="dashboard-logo">
+            <h1>
+                <a href="index.html">
+                    <img src="assets/img/dashboard/dashboard-logo.png" alt="logo">
+                </a>
+            </h1>
+        </div>
+        <nav class="sidebar-list">
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <img src="assets/img/dashboard/home.png" alt="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="workflow.html">
+                        <img src="assets/img/dashboard/workflow.png" alt="workflow">
+                        Workflow
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="statistics.html">
+                        <img src="assets/img/dashboard/statistics.png" alt="statistics">
+                        Statistics
+                    </a>
+                </li>
+                <li>
+                    <a href="calendar.html">
+                        <img src="assets/img/dashboard/calendar.png" alt="calendar">
+                        Calendar
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html">
+                        <img src="assets/img/dashboard/users.png" alt="users">
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/dashboard/settings.png" alt="settings">
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+<header class="header-dashboard">
+    <div class="header-flex">
+        <nav class="icon-list">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-caret-left icon-left-caret"></i>
+                        <i class="fas fa-bars icon-bars"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search icon-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="dashboard-list">
+            <ul>
+                <li>
+                    <a class="add-btn" href="#">
+                        Add project
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-envelope icon-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <div class="notification">
+                        <a href="#">
+                            <i class="fas fa-bell icon-bell"></i>
+                            <div class="circle-blue small">
+                                <span>3</span>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="avatar">
+                            <img src="assets/img/dashboard/avatar.png" alt="avatar">
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container-fluid">
+    <div class="container-admin">
+        <div class="dashboard-content">
+            <div class="work-titles statistics">
+                <h2>Lorem Ipsum Stats</h2>
+                <div class="sales-option statistics">
+                    <select class="statistic-select" name="stat-period" id="stat-period">
+                        <option value="week">Period: Last year</option>
+                        <option value="month">Period: Last month</option>
+                        <option value="year">Period: Last week</option>
+                    </select>
+                    <div class="select-arrow"></div>
+                </div>
+                <div class="sales-option statistics">
+                    <select class="statistic-select" name="type-period" id="type-period">
+                        <option value="week">Type: Notifications</option>
+                        <option value="month">Type: Messages</option>
+                        <option value="year">Type: Signals</option>
+                    </select>
+                    <div class="select-arrow"></div>
+                </div>
+            </div>
+            <div class="content-graphs">
+                <div class="statistics-flex">
+                    <div class="content-sales statistics">
+                        <div class="title-flex count">
+                            <div class="statistics-title center">
+                                <h3><strong>1,560</strong> <br> Sales</h3>
+                            </div>
+                            <div class="sales-option">
+                                <img src="assets/img/statistics/first-graph.png" alt="first-graph">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="content-sales statistics second">
+
+                        <div class="title-flex count">
+                            <div class="statistics-title center">
+                                <h3><strong>3,230</strong> <br> Views</h3>
+                            </div>
+                            <div class="statistics-img">
+                                <img src="assets/img/statistics/second-graph.png" alt="second-graph">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-report">
+                    <div class="title-flex">
+                        <div class="sales-title">
+                            <h3>Active users</h3>
+                        </div>
+                        <div class="statistics-img">
+                            <div class="circles">
+                                <a href="#">
+                                    <div class="circle-blue edit">
+                                        <img src="assets/img/statistics/edit.png" alt="edit">
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="circle-pink delete">
+                                        <img src="assets/img/statistics/delete.png" alt="delete">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="graph-img" src="assets/img/statistics/general-graph.png" alt="general-graph">
+                </div>
+            </div>
+            <div class="content-report active">
+                <div class="title-flex">
+                    <div class="sales-title">
+                        <h3>Total sales</h3>
+                    </div>
+                    <div class="statistics-img">
+                        <div class="circles">
+                            <a href="#">
+                                <div class="circle-blue edit">
+                                    <img src="assets/img/statistics/edit.png" alt="edit">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="circle-pink delete">
+                                    <img src="assets/img/statistics/delete.png" alt="delete">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="circle-statistics">
+                    <div class="title-flex statistics">
+                        <div class="total-statistics-img">
+                            <img src="assets/img/statistics/total-blue.png" alt="total-blue">
+                        </div>
+                        <div class="statistics-title">
+                            <h3><strong>2,300$</strong> <br> Direct Sales</h3>
+                        </div>
+                    </div>
+                    <div class="title-flex statistics">
+                        <div class="total-statistics-img">
+                            <img src="assets/img/statistics/total-pink.png" alt="total-pink">
+                        </div>
+                        <div class="statistics-title">
+                            <h3><strong>980$</strong> <br> Channel Sales</h3>
+                        </div>
+                    </div>
+                    <div class="title-flex statistics">
+                        <div class="total-statistics-img">
+                            <img src="assets/img/statistics/total-red.png" alt="total-red">
+                        </div>
+                        <div class="statistics-title">
+                            <h3><strong>1,250$</strong> <br> Channel Sales</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

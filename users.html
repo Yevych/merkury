@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merkury-Users</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="dashboard">
+<aside class="main-sidebar">
+    <div class="sidebar-wrapper">
+        <div class="dashboard-logo">
+            <h1>
+                <a href="index.html">
+                    <img src="assets/img/dashboard/dashboard-logo.png" alt="logo">
+                </a>
+            </h1>
+        </div>
+        <nav class="sidebar-list">
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <img src="assets/img/dashboard/home.png" alt="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="workflow.html">
+                        <img src="assets/img/dashboard/workflow.png" alt="workflow">
+                        Workflow
+                    </a>
+                </li>
+                <li>
+                    <a href="statistics.html">
+                        <img src="assets/img/dashboard/statistics.png" alt="statistics">
+                        Statistics
+                    </a>
+                </li>
+                <li>
+                    <a href="calendar.html">
+                        <img src="assets/img/dashboard/calendar.png" alt="calendar">
+                        Calendar
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="users.html">
+                        <img src="assets/img/dashboard/users.png" alt="users">
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/dashboard/settings.png" alt="settings">
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+<header class="header-dashboard">
+    <div class="header-flex">
+        <nav class="icon-list">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-caret-left icon-left-caret"></i>
+                        <i class="fas fa-bars icon-bars"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search icon-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="dashboard-list">
+            <ul>
+                <li>
+                    <a class="add-btn" href="#">
+                        Add project
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-envelope icon-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <div class="notification">
+                        <a href="#">
+                            <i class="fas fa-bell icon-bell"></i>
+                            <div class="circle-blue small">
+                                <span>3</span>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="avatar">
+                            <img src="assets/img/dashboard/avatar.png" alt="avatar">
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container-fluid">
+    <div class="container-admin">
+        <div class="dashboard-content">
+            <div class="work-titles">
+                <h2>Users <span class="number">(128)</span></h2>
+                <div class="sales-option statistics">
+                    <select class="statistic-select" name="sort" id="sort">
+                        <option value="week">Sort: Active first</option>
+                        <option value="month">Sort: No active first</option>
+                    </select>
+                    <div class="select-arrow"></div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Last activity</th>
+                    <th>Mail</th>
+                    <th colspan="2">Phone</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="activity-content users">
+                            <div class="activity-avatar">
+                                <img src="assets/img/users/james-smith.png" alt="james-smith">
+                            </div>
+                            <div class="activity-info users">
+                                <p>
+                                    <strong>James Smith</strong>
+                                </p>
+                                <div class="activity-time users">
+                                    <span>CEO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tasks-time completed users">
+                            <i class="far fa-clock icon-clock"></i>
+                            <span>Online now!</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="users-mail">
+                            <a href="mailto:johndoe@design.com">
+                                <strong>johndoe@design.com</strong>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="users-phone">
+                            <a href="tel:(000)111222333">
+                                <strong>(000) 111 222 333</strong>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tasks-options">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v icon-dots-user"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="activity-content users">
+                            <div class="activity-avatar">
+                                <img src="assets/img/users/nina-jones.png" alt="nina-jones">
+                            </div>
+                            <div class="activity-info users">
+                                <p>
+                                    <strong>Nina Jones</strong>
+                                </p>
+                                <div class="activity-time users">
+                                    <span>UX Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tasks-time completed users">
+                            <i class="far fa-clock icon-clock"></i>
+                            <span>Online now!</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="users-mail">
+                            <a href="mailto:ninajones@design.com">
+                                <strong>ninajones@design.com</strong>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="users-phone">
+                            <a href="tel:(000)111222333">
+                                <strong>(000) 111 222 333</strong>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tasks-options">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v icon-dots-user"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="activity-content users">
+                            <div class="activity-avatar">
+                                <img src="assets/img/users/alex-smith.png" alt="alex-smith">
+                            </div>
+                            <div class="activity-info users">
+                                <p>
+                                    <strong>Alex Smith</strong>
+                                </p>
+                                <div class="activity-time users">
+                                    <span>Web Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tasks-time completed users">
+                            <i class="far fa-clock icon-clock"></i>
+                            <span>Online now!</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="users-mail">
+                            <a href="mailto:alexsmith@design.com">
+                                <strong>alexsmith@design.com</strong>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="users-phone">
+                            <a href="tel:(000)111222333">
+                                <strong>(000) 111 222 333</strong>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tasks-options">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v icon-dots-user"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="activity-content users">
+                            <div class="activity-avatar">
+                                <img src="assets/img/users/ann-clooney.png" alt="ann-clooney">
+                            </div>
+                            <div class="activity-info users">
+                                <p>
+                                    <strong>Ann Clooney</strong>
+                                </p>
+                                <div class="activity-time users">
+                                    <span>Account Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tasks-time users">
+                            <i class="far fa-clock icon-clock"></i>
+                            <span>20 minutes ago</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="users-mail">
+                            <a href="mailto:annclooney@design.com">
+                                <strong>annclooney@design.com</strong>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="users-phone">
+                            <a href="tel:(000)111222333">
+                                <strong>(000) 111 222 333</strong>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tasks-options">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v icon-dots-user"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="activity-content users">
+                            <div class="activity-avatar">
+                                <img src="assets/img/users/patric-smith.png" alt="patric-smith">
+                            </div>
+                            <div class="activity-info users">
+                                <p>
+                                    <strong>Patric Smith</strong>
+                                </p>
+                                <div class="activity-time users">
+                                    <span>Project Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tasks-time users">
+                            <i class="far fa-clock icon-clock"></i>
+                            <span>40 minutes ago</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="users-mail">
+                            <a href="mailto:patricksmith@design.com">
+                                <strong>patricksmith@design.com</strong>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="users-phone">
+                            <a href="tel:(000)111222333">
+                                <strong>(000) 111 222 333</strong>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tasks-options">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v icon-dots-user"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="activity-content users">
+                            <div class="activity-avatar">
+                                <img src="assets/img/users/nicky-hunt.png" alt="nicky-hunt">
+                            </div>
+                            <div class="activity-info users">
+                                <p>
+                                    <strong>Nicky Hunt</strong>
+                                </p>
+                                <div class="activity-time users">
+                                    <span>Product Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tasks-time users">
+                            <i class="far fa-clock icon-clock"></i>
+                            <span>1 hour ago</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="users-mail">
+                            <a href="mailto:nickyhunt@design.com">
+                                <strong>nickyhunt@design.com</strong>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="users-phone">
+                            <a href="tel:(000)111222333">
+                                <strong>(000) 111 222 333</strong>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tasks-options">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v icon-dots-user"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="activity-content users">
+                            <div class="activity-avatar">
+                                <img src="assets/img/users/jane-doe.png" alt="jane-doe">
+                            </div>
+                            <div class="activity-info users">
+                                <p>
+                                    <strong>Jane Doe</strong>
+                                </p>
+                                <div class="activity-time users">
+                                    <span>Graphic Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tasks-time users">
+                            <i class="far fa-clock icon-clock"></i>
+                            <span>2 days ago</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="users-mail">
+                            <a href="mailto:janedoe@design.com">
+                                <strong>janedoe@design.com</strong>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="users-phone">
+                            <a href="tel:(000)111222333">
+                                <strong>(000) 111 222 333</strong>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tasks-options">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v icon-dots-user"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="pagination-nav">
+                <div class="pagination">
+                    <ul class="pagination-wrapper">
+                        <li>
+                            <a class="active" href="#">
+                                1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                4
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                5
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pagination-icon">
+                    <a href="#">
+                        <i class="fas fa-angle-right icon-right pagination"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

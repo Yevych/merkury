@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merkury Calendar</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="dashboard">
+<aside class="main-sidebar">
+    <div class="sidebar-wrapper">
+        <div class="dashboard-logo">
+            <h1>
+                <a href="index.html">
+                    <img src="assets/img/dashboard/dashboard-logo.png" alt="logo">
+                </a>
+            </h1>
+        </div>
+        <nav class="sidebar-list">
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <img src="assets/img/dashboard/home.png" alt="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="workflow.html">
+                        <img src="assets/img/dashboard/workflow.png" alt="workflow">
+                        Workflow
+                    </a>
+                </li>
+                <li>
+                    <a href="statistics.html">
+                        <img src="assets/img/dashboard/statistics.png" alt="statistics">
+                        Statistics
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="calendar.html">
+                        <img src="assets/img/dashboard/calendar.png" alt="calendar">
+                        Calendar
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html">
+                        <img src="assets/img/dashboard/users.png" alt="users">
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/dashboard/settings.png" alt="settings">
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+<header class="header-dashboard">
+    <div class="header-flex">
+        <nav class="icon-list">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-caret-left icon-left-caret"></i>
+                        <i class="fas fa-bars icon-bars"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search icon-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="dashboard-list">
+            <ul>
+                <li>
+                    <a class="add-btn" href="#">
+                        Add project
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-envelope icon-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <div class="notification">
+                        <a href="#">
+                            <i class="fas fa-bell icon-bell"></i>
+                            <div class="circle-blue small">
+                                <span>3</span>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="avatar">
+                            <img src="assets/img/dashboard/avatar.png" alt="avatar">
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container-fluid">
+    <div class="container-admin">
+        <div class="dashboard-content">
+            <div class="work-titles statistics">
+                <div class="calendar-title">
+                    <a href="#">
+                        <i class="fas fa-caret-left icon-calendar-left-caret"></i>
+                    </a>
+                    <h2>January 2016</h2>
+                    <a href="#">
+                        <i class="fas fa-caret-right icon-calendar-right-caret"></i>
+                    </a>
+                </div>
+                <div class="sales-option statistics">
+                    <select class="statistic-select" name="calendar-period" id="calendar-period">
+                        <option value="week">View: Month</option>
+                        <option value="month">View: 3 Month</option>
+                        <option value="year">View: 6 Month</option>
+                    </select>
+                    <div class="select-arrow"></div>
+                </div>
+            </div>
+            <table>
+                <thead class="calendar">
+                <tr>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+                </thead>
+                <tbody class="calendar">
+                <tr>
+                    <td>
+                        <span class="last-date">DEC 28</span>
+                    </td>
+                    <td>
+                        <span class="last-date">DEC 29</span>
+                        <ul class="calendar-item">
+                            <li>
+                                <a href="#">
+                                    Meeting with Dan Smith
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <span class="last-date">DEC 30</span>
+                    </td>
+                    <td>
+                        <span class="last-date">DEC 31</span>
+                    </td>
+                    <td>
+                        <strong>1</strong>
+                    </td>
+                    <td>
+                        <strong>2</strong>
+                        <ul class="calendar-item">
+                            <li class="meeting">
+                                <a href="#">
+                                    Team meeting
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Show guys how to mak...
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <strong>3</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>4</strong>
+                    </td>
+                    <td>
+                        <strong>5</strong>
+                    </td>
+                    <td>
+                        <strong>6</strong>
+                    </td>
+                    <td>
+                        <strong>7</strong>
+                    </td>
+                    <td>
+                        <strong>8</strong>
+                        <ul class="calendar-item">
+                            <li>
+                                <a href="#">
+                                    New website presenta...
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <strong>9</strong>
+                    </td>
+                    <td>
+                        <strong>10</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>11</strong>
+                    </td>
+                    <td>
+                        <strong>12</strong>
+                    </td>
+                    <td>
+                        <strong>13</strong>
+                    </td>
+                    <td>
+                        <strong>14</strong>
+                    </td>
+                    <td>
+                        <strong>15</strong>
+                    </td>
+                    <td>
+                        <strong>16</strong>
+                        <ul class="calendar-item">
+                            <li>
+                                <a href="#">
+                                    Meeting with Google CEO
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <strong>17</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>18</strong>
+                    </td>
+                    <td class="open-task">
+                        <strong>19</strong>
+                        <ul class="calendar-item">
+                            <li class="open">
+                                <a href="#">
+                                    Annual Report
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <strong>20</strong>
+                    </td>
+                    <td>
+                        <strong>21</strong>
+                        <ul class="calendar-item">
+                            <li class="meeting">
+                                <a href="#">
+                                    Team meeting
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Call to John
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <strong>22</strong>
+                    </td>
+                    <td>
+                        <strong>23</strong>
+                    </td>
+                    <td>
+                        <strong>24</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>25</strong>
+                    </td>
+                    <td>
+                        <strong>26</strong>
+                    </td>
+                    <td>
+                        <strong>27</strong>
+                    </td>
+                    <td>
+                        <strong>28</strong>
+                    </td>
+                    <td>
+                        <strong>29</strong>
+                    </td>
+                    <td>
+                        <strong>30</strong>
+                    </td>
+                    <td>
+                        <strong>31</strong>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
